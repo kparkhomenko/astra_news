@@ -1,0 +1,38 @@
+.content_container {
+    min-height: 560px;
+}
+
+.no_results {
+    text-align: center;
+    margin-top: 138px;
+}
+
+.news_list_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+    margin-left: 100px;
+}
+
+.news_item_div img {
+    width: 510px;
+    height: 247px;
+}
+
+.news_item_div h1 {
+    width: 510px;
+    font-size: 36px;
+    margin-top: 21px;
+}
+
+.news_item_div p {
+    height: 60px;
+    width: 510px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.news_item_div {
+    margin-top: 74px;
+}

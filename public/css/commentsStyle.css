@@ -1,0 +1,37 @@
+.comment_item_div {
+    margin-top: 71px;
+}
+
+.upper {
+    display: flex;
+}
+
+.comment_name {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    width: 250px;
+    margin-left: 15px;
+}
+
+.comment_date {
+    margin-left: 19px;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #404040;
+    margin-top: 15px;
+}
+
+h2 {
+    margin-top: 33px;
+}
+
+.comment_text_div {
+    width: 702px;
+    height: 144px;
+    border-radius: 15px;
+    background-color: #E3EAEF;
+    padding: 15px;
+    font-family: 'Oswald';
+    font-size: 16px;
+    margin-top: 24px;
+}

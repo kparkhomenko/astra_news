@@ -1,0 +1,71 @@
+.content_container {
+    text-align: center;
+    margin-top: 138px;
+}
+
+.content_container h1 {
+    font-size: 48px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 474px;
+}
+
+input {
+    width: 491px;
+    height: 34px;
+    background-color: #F8F8F6;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    color: black;
+    padding-left: 2px;
+    padding-bottom: 7px;
+    margin-top: 64px;    
+}
+
+.update_btn {
+    width: 491px;
+    height: 49px;
+    background-color: #1D4E89;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 64px;    
+}
+
+.password_change_title {
+    margin-top: 64px;    
+}
+
+.error {
+    color: #801717;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: start;
+    margin-left: 7px;
+    font-family: 'Open Sans';
+}
+
+.success {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: #388017;
+    margin-top: 16px;
+}
+
+.special_error {
+    text-align: center;
+    font-size: 24px;
+    color: #801717;
+    margin-top: 16px;
+}
+
+button:hover {
+    background-color: #F07300;
+}

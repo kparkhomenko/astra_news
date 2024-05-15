@@ -1,0 +1,71 @@
+input, p, button {
+    font-family: 'Open Sans';
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 138px;
+    font-size: 48px;
+  }
+  
+  input {
+    width: 491px;
+    height: 34px;
+    background-color: #F8F8F6;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    color: black;
+    padding-left: 2px;
+    padding-bottom: 7px;
+    margin-top: 64px;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  .login_btn {
+    width: 491px;
+    height: 49px;
+    background-color: #1D4E89;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 64px;
+  }
+  
+  .error {
+    color: #801717;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: -340px;
+  }
+  
+  .special_error {
+    text-align: center;
+    font-size: 24px;
+    color: #801717;
+    margin-top: 64px;
+  }
+  
+  .register_msg {
+    display: flex;
+    font-size: 24px;
+    margin-top: 34px;
+    margin-left: 536px;
+  }
+  
+  .register_msg a {
+    margin-left: 5px;
+  }
+
+  .register_msg a:hover {
+    color: #F07300;
+  }
+
+  button:hover {
+    background-color: #F07300;
+  }

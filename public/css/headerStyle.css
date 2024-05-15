@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+}
+
+a, h1, h2, input {
+    font-family: 'Open Sans';
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F8F8F6;
+}
+
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #E3EAEF;
+    height: 123px;
+}
+
+.logo_text {
+    font-family: "Kotta One", serif;
+    font-size: 20px;
+    color: #1D4E89;
+}
+
+.logo_div {
+    margin-top: 13px;
+}
+
+.logo_img {
+    margin-left: 16px;
+}
+
+.navbar_icon_div {
+    position: relative;
+    left: 500px;
+    margin-top: 36px;
+}
+
+.navbar_icon_div a {
+    margin-left: 25px;
+}
+
+.logout_icon {
+    position: relative;
+    top: -11px;
+}
+
+.navbar_links_div a {
+    color: black;
+    font-size: 20px;
+    margin-left: 41px;
+}
+
+.navbar_links_div {
+    position: relative;
+    margin-top: 48px;
+    left: 370px;
+    white-space: wrap;
+}
+
+#search_input {
+    display: none;
+    width: 240px;
+    height: 34px;
+    background-color: #E3EAEF;
+    border: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    font-size: 20px;
+    margin-top: 43px;
+    left: 5px;
+}
+
+.search_loup {
+    margin-left: 126px;
+    margin-top: 43px;
+}
+
+textarea {
+    resize: none;
+}
+
+.login_img, .register_img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar_links_div a:hover {
+    color: #1D4E89;
+}

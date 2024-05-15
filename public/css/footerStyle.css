@@ -1,0 +1,29 @@
+footer {
+    margin-top: 74px;
+    height: 168px;
+    background-color: #E3EAEF;
+    display: flex;
+    z-index: 10;
+}
+
+.logo_div_2 {
+    margin-top: 45px;
+}
+
+.right_reserved {
+    font-family: 'Oswald';
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 73px;
+}
+
+.soc_sites_div a {
+    margin-left: 31px;
+    z-index: 10;
+}
+
+.soc_sites_div {
+    margin-top: 46px;
+    margin-left: 850px;
+    z-index: 10;
+}
