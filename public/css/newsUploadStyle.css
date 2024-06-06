@@ -95,3 +95,64 @@ textarea {
 button:hover {
     background-color: #F07300;
 }
+
+@media (max-width: 1440px) {
+    .content_div {
+        margin-top: 60px;
+    }
+
+    .content_div h1 {
+        font-size: 16px;
+    }
+
+    .form {
+        margin-left: 110px;
+    }
+
+    input, select {
+        width: 157px;
+        height: 15px;
+        font-size: 8px;
+        border-bottom: 1px solid black;
+        margin-top: 16px;
+        padding-bottom: 2px;
+        padding-left: 1px;
+    }  
+
+    .custom-file-upload {
+        width: 157px;
+        height: 18px;
+        border-radius: 2px;
+        margin-top: 16px;
+        font-size: 10px;
+        padding-top: 1px;
+    }
+
+    textarea {
+        width: 157px;
+        height: 98px;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 16px;
+        font-size: 6px;
+    }
+
+    .add_news_btn {
+        width: 157px;
+        height: 18px;
+        border-radius: 2px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+
+    .success {
+        font-size: 10px;
+        margin-top: 16px;
+    }
+
+    .error {
+        font-size: 6px;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+}

@@ -7,8 +7,8 @@
     <link href="{{ asset('css/loginStyle.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
     @include('components.header')
+    <div class="container">
     <h1>Добро пожаловать!</h1>
     <form action="login" method="post">
         @csrf

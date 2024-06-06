@@ -7,8 +7,8 @@
     <link href="{{ asset('css/updateStyle.css') }}" rel="stylesheet">
 </head>
 <body>
+    @include('components.header')
     <div class="container">
-        @include('components.header')
     <div class="content_container">
     <h1>Данные профиля</h1>
     <form action="update_user" method="post" class="form">
@@ -51,7 +51,7 @@
             <p class="success">{{ Session::forget('success_password_message') }}</p>
         @endif
     </div>
-        @include('components.footer')
     </div>
+    @include('components.footer')
 </body>
 </html>

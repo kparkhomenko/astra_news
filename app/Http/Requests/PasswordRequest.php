@@ -25,7 +25,7 @@ class PasswordRequest extends FormRequest
     {
         return [
             'password' => 'required',
-            'new_password' => 'required | min:8'
+            'new_password' => 'required | min:8 |'
         ];
     }
 

@@ -64,8 +64,57 @@ input {
     font-size: 24px;
     color: #801717;
     margin-top: 16px;
+    margin-left: -470px;
 }
 
 button:hover {
     background-color: #F07300;
+}
+
+@media (max-width: 1440px) {
+
+    .content_container {
+        margin-top: 60px;
+    }
+
+    .content_container h1 {
+        font-size: 16px;
+    }
+
+    .form {
+        margin-left: 110px;
+    }
+
+    input {
+        width: 157px;
+        height: 15px;
+        font-size: 8px;
+        border-bottom: 1px solid black;
+        margin-top: 16px;
+        padding-bottom: 2px;
+        padding-left: 1px;
+    }
+
+    .update_btn {
+        width: 157px;
+        height: 18px;
+        border-radius: 2px;
+        font-size: 10px;
+        margin-top: 16px;
+    }
+
+    .special_error, .success {
+        font-size: 10px;
+        margin-top: 16px;
+    }
+
+    .special_error {
+        margin-left: -110px;
+    }
+
+    .error {
+        font-size: 6px;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
 }

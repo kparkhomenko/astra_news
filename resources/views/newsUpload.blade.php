@@ -7,9 +7,8 @@
     <link href="{{ asset('css/newsUploadStyle.css') }}" rel="stylesheet">
 </head>
 <body>
+@include('components.header')
 <div class="container">
-    @include('components.header')
-
     <div class="content_div">
     @if(Auth::user()->status == 'admin')
     <h1>Добавить новость</h1>

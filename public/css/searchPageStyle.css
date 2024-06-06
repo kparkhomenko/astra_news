@@ -36,3 +36,41 @@
 .news_item_div {
     margin-top: 74px;
 }
+
+@media (max-width: 1440px) {
+
+    .no_results {
+        font-size: 16px;
+    }
+
+    .news_list_div {
+        grid-column-gap: 0;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
+        margin-left: 21px;
+        margin-top: 16px;
+    }
+
+    .news_item_div {
+        width: 154px;
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .news_item_div img {
+        width: 154px;
+        height: 105px;
+    }
+
+    .news_item_div h1 {
+        width: 154px;
+        margin-top: 4px;
+        font-size: 12px;
+    }
+
+    .news_item_div p {
+        width: 154px;
+        font-size: 8px;
+        height: 48px;
+    }
+}

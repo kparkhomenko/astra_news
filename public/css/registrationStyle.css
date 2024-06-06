@@ -66,3 +66,42 @@ button:hover {
 .login_msg a:hover {
   color: #F07300;
 }
+
+@media (max-width: 1440px) {
+
+  h1 {
+    font-size: 16px;
+    margin-top: 61px;
+  }
+
+  input, select {
+    width: 157px;
+    height: 15px;
+    font-size: 8px;
+    border-bottom: 1px solid black;
+    margin-top: 16px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+  }
+
+  .error {
+    font-size: 6px;
+    margin-top: 5px;
+    margin-left: 112px;
+    width: 150px;
+  }
+
+  .register_btn {
+    width: 157px;
+    height: 18px;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-top: 16px;
+  }
+
+  .login_msg {
+    font-size: 10px;
+    margin-left: 120px;
+    margin-top: 16px;
+  }
+}

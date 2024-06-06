@@ -7,8 +7,8 @@
     <link href="{{ asset('css/registrationStyle.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
     @include('components.header')
+    <div class="container">
     <h1>Регистрация аккаунта</h1>
     <form action="{{ route('user_register') }}" method="post">
         @csrf

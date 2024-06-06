@@ -40,4 +40,44 @@ class NewsController extends Controller
         $news_search = News::where('title', 'like', '%'. $req->text .'%')->orWhere('text', 'like', '%'. $req->text .'%')->get();
         return view('searchPage', compact('news_search'));
     }
+
+    public function get_sport_moderate(Request $req) {
+        $news_sport = News::where('category', '=', 'Спорт')->where('status', '=', 'unmoderated')->latest()->get();
+        return view('components.adminNews.newsModerateSport', compact('news_sport'));
+    }
+
+    public function get_region_moderate(Request $req) {
+        $news_region = News::where('category', '=', 'Регион')->where('status', '=', 'unmoderated')->latest()->get();
+        return view('components.adminNews.newsModerateRegion', compact('news_region'));
+    }
+
+    public function get_culture_moderate(Request $req) {
+        $news_culture = News::where('category', '=', 'Культура')->where('status', '=', 'unmoderated')->latest()->get();
+        return view('components.adminNews.newsModerateCulture', compact('news_culture'));
+    }
+
+    public function get_project_moderate(Request $req) {
+        $news_project = News::where('category', '=', 'Проекты')->where('status', '=', 'unmoderated')->latest()->get();
+        return view('components.adminNews.newsModerateProject', compact('news_project'));
+    }
+
+    public function get_sport(Request $req) {
+        $news_sport = News::where('category', '=', 'Спорт')->where('status', '=', 'moderated')->latest()->get();
+        return view('components.adminNews.newsSport', compact('news_sport'));
+    }
+
+    public function get_region(Request $req) {
+        $news_region = News::where('category', '=', 'Регион')->where('status', '=', 'moderated')->latest()->get();
+        return view('components.adminNews.newsRegion', compact('news_region'));
+    }
+
+    public function get_culture(Request $req) {
+        $news_culture = News::where('category', '=', 'Культура')->where('status', '=', 'moderated')->latest()->get();
+        return view('components.adminNews.newsCulture', compact('news_culture'));
+    }
+
+    public function get_project(Request $req) {
+        $news_project = News::where('category', '=', 'Проекты')->where('status', '=', 'moderated')->latest()->get();
+        return view('components.adminNews.newsProject', compact('news_project'));
+    }
 }

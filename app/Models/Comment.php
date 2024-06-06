@@ -13,6 +13,7 @@ class Comment extends Model
         'news_id',
         'user_name',
         'user_id',
-        'text'
+        'text',
+        'status'
     ];
 }

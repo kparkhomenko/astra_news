@@ -8,8 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
     @include('components.header')
+    <div class="container">
     <div class="content_container">
     @if(isset($news_search[0]))
     <div class="news_list_div">
@@ -25,8 +25,8 @@
     <h1 class="no_results">По вашему запросу ничего не найдено</h1>
     @endif
     </div>
-    @include('components.footer')
     </div>
+    @include('components.footer')
 <script>
     function getId(news_id) {
         $.ajax({

@@ -8,9 +8,15 @@
 
 .comment_name {
     font-family: 'Open Sans';
-    font-size: 24px;
-    width: 250px;
+    font-size: 20px;
+    width: fit-content;
+    max-width: 250px;
     margin-left: 15px;
+    color: black;
+}
+
+.comment_name:hover {
+    color: #F07300;
 }
 
 .comment_date {
@@ -18,7 +24,7 @@
     font-family: 'Open Sans';
     font-size: 12px;
     color: #404040;
-    margin-top: 15px;
+    margin-top: 7px;
 }
 
 h2 {
@@ -34,4 +40,38 @@ h2 {
     font-family: 'Oswald';
     font-size: 16px;
     margin-top: 24px;
+}
+
+@media (max-width: 1440px){
+    .comment_item_div {
+        margin-top: 16px;
+        width: 158px;
+        border-radius: 5px;
+        margin-left: 16px;
+    }
+
+    .upper {
+        flex-direction: column;
+    }
+
+    .comment_name {
+        font-size: 12px;
+        width: 158px;
+        margin-left: 2px;
+    }
+
+    .comment_date {
+        margin-top: 5px;
+        font-size: 6px;
+        margin-left: 2px;
+    }
+
+    .comment_text_div {
+        font-size: 10px;
+        width: 158px;
+        margin-top: 9px;
+        height: fit-content;
+        min-height: 90px;
+        padding: 6px;
+    }
 }

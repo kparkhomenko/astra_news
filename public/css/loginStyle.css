@@ -38,10 +38,11 @@ input, p, button {
   }
   
   .error {
+    text-align: start;
     color: #801717;
     font-size: 16px;
     margin-top: 12px;
-    margin-left: -340px;
+    margin-left: 480px;
   }
   
   .special_error {
@@ -68,4 +69,47 @@ input, p, button {
 
   button:hover {
     background-color: #F07300;
+  }
+
+  @media (max-width: 1440px) {
+
+    h1 {
+      font-size: 16px;
+      margin-top: 61px;
+    }
+  
+    input {
+      width: 157px;
+      height: 15px;
+      font-size: 8px;
+      border-bottom: 1px solid black;
+      margin-top: 16px;
+      padding-bottom: 2px;
+      padding-left: 1px;
+    }
+  
+    .error {
+      font-size: 6px;
+      margin-top: 5px;
+      margin-left: 112px;
+    }
+  
+    .login_btn {
+      width: 157px;
+      height: 18px;
+      border-radius: 2px;
+      font-size: 10px;
+      margin-top: 16px;
+    }
+  
+    .register_msg {
+      font-size: 10px;
+      margin-left: 110px;
+      margin-top: 16px;
+    }
+
+    .special_error {
+      font-size: 10px;
+      margin-top: 16px;
+    }
   }

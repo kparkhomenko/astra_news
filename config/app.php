@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'Europe/Astrakhan',
+    'timezone' => 'Europe/Moscow',
 
     /*
     |--------------------------------------------------------------------------

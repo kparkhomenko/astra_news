@@ -27,7 +27,7 @@
     font-family: 'Open Sans';
     font-size: 16px;
     position: relative;
-    right: 220px;
+    right: 240px;
     top: 70px;
 }
 
@@ -139,7 +139,8 @@
 
 .user_comment_text_div {
     width: 298px;
-    height: 140px;
+    min-height: 140px;
+    height: auto;
     background-color: #E3EAEF;
     border-radius: 15px 15px 15px 42px;
 }
@@ -160,11 +161,28 @@
     margin-top: 9px;
 }
 
+.no_object_moderate {
+    font-size: 36px;
+    width: 600px;
+    text-align: center;
+    margin-left: 320px;
+    margin-top: 100px;
+}
+
 .no_object {
     font-size: 36px;
     width: 600px;
     text-align: center;
     margin-left: 320px;
+}
+
+.no_object_comment {
+    font-size: 36px;
+    width: 600px;
+    text-align: center;
+    margin-left: 270px;
+    text-wrap: nowrap;    
+    margin-top: 100px;
 }
 
 .add_object, .delete_object {
@@ -205,4 +223,210 @@
 
 .delete_object:hover {
     background-color: #ED1B24;
+}
+
+#comments {
+    margin-top: -150px;
+    margin-left: 100px;
+}
+
+.user_comment_name {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    width: 298px;
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+@media (max-width: 1440px){
+    .user_statistics_div {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .user_statistics_div h1 {
+        font-size: 16px;
+    }
+
+    .host_name {
+        font-size: 10px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-left: 60px;
+    }
+
+    .user_statistics_div img {
+        width: 48px;
+        height: 48px;
+        margin-top: 16px;
+        margin-left: 160px;
+    }
+
+    .user_statistics_div_list {
+        margin-left: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .user_statistics_item {
+        width: 158px;
+        height: 81px;
+        border-radius: 5px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+
+    .title {
+        font-size: 10px;
+        padding-top: 8px;
+    }
+
+    .num_value {
+        font-size: 16px;
+        padding-top: 11px;
+    }
+
+    .text_value {
+        font-size: 12px;
+        padding-top: 11px;
+    }
+
+    .user_btns_div {
+        margin-top: 16px;
+        grid-column-gap: 10px;
+        margin-left: 0;
+        margin-left: 16px;
+    }
+
+    .user_btn {
+        width: 158px;
+        height: 18px;
+        border-radius: 2px;
+        font-size: 10px;
+    }
+
+    .user_news_div, .user_comments_div {
+        margin-top: 16px;
+        flex-direction: column;
+    }
+
+    .user_news_name, .user_comments_name {
+        transform: none;
+        height: 16px;
+        width: 64px;
+        font-size: 8px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+
+    .user_news_name p, .user_comments_name p {
+        margin-top: 3px;
+    }
+
+    .user_news_list, .user_comments_list {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
+        margin-left: 16px;
+        grid-column-gap: 10px;
+    }
+
+    .news_item_div, .user_comment_item {
+        margin-top: 16px;
+    }
+
+    .news_item_div img {
+        width: 154px;
+        height: 105px;
+    }
+
+    .news_item_div h2 {
+        font-size: 12px;
+        width: 154px;
+        margin-top: 4px;
+    }
+
+    .news_item_div p {
+        font-size: 8px;
+        width: 154px;
+        height: 48px;
+        margin-top: 4px;
+    }
+
+    .user_comment_item {
+        width: 154px;
+    }
+
+    .user_comment_text_div {
+        font-size: 8px;
+        width: 154px;
+        height: fit-content;
+        min-height: 90px;
+        padding: 6px;
+        border-radius: 5px 5px 5px 25px;
+    }
+
+    .answer {
+        font-size: 8px;
+        margin-left: 5px;
+    }
+
+    .user_comment_item h2 {
+        font-size: 12px;
+        margin-left: 5px;
+        width: 149px;
+        margin-left: 5px;
+        margin-top: 6px;
+    }
+
+    .no_object {
+        font-size: 16px;
+        margin-top: 16px;
+        margin-left: 0;
+        width: 375px;
+    }
+
+    .no_object_moderate {
+        font-size: 16px;
+        margin-top: 16px;
+        margin-left: 0;
+        width: 348px;
+    }
+
+    .admin_status {
+        top: 0;
+        right: 0;
+        font-size: 8px;
+    }
+
+    #comments {
+        margin-left: 16px;
+        margin-top: 0;
+    }
+
+    .add_object, .delete_object {
+        width: 154px;
+        height: 14px;
+        border-radius: 2px;
+        font-size: 8px;
+        margin-top: 7px;
+    }
+
+    .user_news_admin_list {
+        margin-top: 0;
+        margin-left: 16px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+
+    .user_comments_admin_div {
+        margin-top: 0px;
+    }
+
+    .user_comment_name {
+        margin-left: 5px;
+        margin-top: 2px;
+        font-size: 10px;
+        width: 149px;
+    }
 }

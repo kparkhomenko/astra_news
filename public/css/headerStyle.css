@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-.navbar {
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.navbar_div {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
 }
 
@@ -22,12 +31,14 @@ a {
 
 body {
     background-color: #F8F8F6;
+    overflow-x: hidden;
 }
 
 .container {
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 700px;
 }
 
 .navbar {
@@ -106,4 +117,108 @@ textarea {
 
 .navbar_links_div a:hover {
     color: #1D4E89;
+}
+
+.search_div {
+    display: flex;
+}
+
+@media (max-width: 1440px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar_div {
+        width: 375px;
+    }
+
+    .navbar {
+        height: 54px;
+    }
+
+    .logo_text {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 375px;
+        min-height: 679px;
+    }
+
+    .logo_div {
+        margin-left: 26px;
+        margin-top: 0;
+    }
+
+    .logo_img {
+        margin-left: 10px;
+        position: relative;
+        top: 5px;
+    }
+
+    .logo_img img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .search_loup {
+        margin-left: 33px;
+        margin-top: 11px;
+    }
+
+    #search_input {
+        width: 130px;
+        height: 13px;
+        font-size: 8px;
+        margin-top: 12px;
+    }
+
+    .search_loup {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navbar_links_div {
+        display: flex;
+        left: -25px;
+        margin-top: 31px;
+
+    }
+
+    .navbar_links_div a {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .navbar_icon_div {
+        left: 10px;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    #login {
+        width: 26px;
+        height: 26px;
+    }
+
+    #register {
+        width: 26px;
+        height: 26px;
+    }
+
+    .navbar_icon_div a {
+        margin-left: 4px;
+    }
+
+    #user {
+        width: 30px;
+        height: 30px;
+    }
+
+    #logout {
+        width: 20px;
+        height: 20px;
+        margin-top: 15px;
+    }
 }

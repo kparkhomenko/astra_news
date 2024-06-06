@@ -15,7 +15,7 @@ use App\Models\Comment;
 class UserController extends Controller
 {
     public function register(RegistrationRequest $req) {
-        $user = User::create(['name' => $req->name, 'email' => $req->email, 'password' => Hash::make($req->password), 'district' => $req->district, 'status' => 'user']);
+        $user = User::create(array_merge($req->validated(),['name' => $req->name, 'email' => $req->email, 'password' => Hash::make($req->password), 'district' => $req->district, 'status' => 'user']));
 
         if ($user) {
             Auth::login($user);
@@ -46,7 +46,7 @@ class UserController extends Controller
                 'dataError' => 'Изменения отсутствуют'
             ]);            
         } else {
-        User::where('id', '=', Auth::user()->id)->update(['name' => $req->name, 'email' => $req->email]);
+        User::where('id', '=', Auth::user()->id)->update(array_merge($req->validated(), ['name' => $req->name, 'email' => $req->email]));
         Comment::where('user_id', '=', Auth::user()->id)->update(['user_name' => $req->name]);
         $success_message = $req->session()->put('success_message', 'Изменения внесены в профиль');
         return redirect()->back()->with($success_message);

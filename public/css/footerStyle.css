@@ -2,8 +2,14 @@ footer {
     margin-top: 74px;
     height: 168px;
     background-color: #E3EAEF;
-    display: flex;
     z-index: 10;
+}
+
+.footer_div {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
 .logo_div_2 {
@@ -22,8 +28,48 @@ footer {
     z-index: 10;
 }
 
+.soc_site_div a:first-child {
+    margin-left: 400px;
+}
+
 .soc_sites_div {
     margin-top: 46px;
-    margin-left: 850px;
+    margin-left: 830px;
     z-index: 10;
+}
+
+@media (max-width: 1440px) {
+    .logo_div_2 {
+        margin-left: 26px;
+        margin-top: 5px;
+    }
+
+    footer {
+        height: 54px;
+        margin-top: 16px;
+    }
+
+    .footer_div {
+        width: 375px;
+    }
+
+    .right_reserved {
+        font-size: 6px;
+        margin-top: 30px;
+        text-wrap: nowrap;
+    }
+
+    .soc_sites_div {
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+
+    .soc_sites_div a {
+        margin-left: 13px;
+    }
+
+    .soc_sites_div img {
+        width: 30px;
+        height: 30px;
+    }
 }

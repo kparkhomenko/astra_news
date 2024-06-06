@@ -8,8 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
+    @include('components.header')
     <div class="container">
-        @include('components.header')
         @if(isset($news_sport[0]))
         <div class="category_1_container">
             <div class="category_1_div">
@@ -28,12 +28,14 @@
             <div class="last_news_list">
                 <div class="list_line"></div>
                 <h1>Лента новостей</h1>
+                <div class="last_news_item_div">
                 @foreach($last_news as $news_item)
                     <div class="last_news_item">
-                        <p class="date">{{ \Carbon\Carbon::parse($news_item->created_at)->format('H:m') }}</p>
+                        <p class="date">{{ \Carbon\Carbon::parse($news_item->created_at)->format('H:i') }}</p>
                         <a href="{{ url('news/'.$news_item->id) }}" onclick="getId('{{ $news_item->id }}')"><p class="last_news_item_text">{{ $news_item->text }}</p></a>
                     </div>
                 @endforeach
+                </div>
             </div>
             </div>
             <div class="news_1_list">
@@ -43,7 +45,7 @@
             </div>
             @else 
             <div class="news_item_1_div">
-                <a href="{{ url('news/'.$news_item->id) }}" onclick="getId('{{ $news_item->id }}')"><img src="{{ asset('storage/NewsImg/'.$news_item->img) }}" alt=""></a>
+                <a href="{{ url('news/'.$news_item->id) }}" onclick="getId('{{ $news_item->id }}')"><img src="{{ asset('storage/NewsImg/'.$news_item->img) }}" alt="" width="298px" height="140px"></a>
                 <h1>{{ $news_item->title }}</h1>
                 <p>{{ $news_item->text }}</p>
             </div> 
@@ -75,7 +77,7 @@
             </div>
             @else 
             <div class="news_item_1_div">
-                <a href="{{ url('news/'.$news_item->id) }}" onclick="getId('{{ $news_item->id }}')"><img src="{{ asset('storage/NewsImg/'.$news_item->img) }}" alt=""></a>
+                <a href="{{ url('news/'.$news_item->id) }}" onclick="getId('{{ $news_item->id }}')"><img src="{{ asset('storage/NewsImg/'.$news_item->img) }}" alt="" width="298px" height="140px"></a>
                 <h1>{{ $news_item->title }}</h1>
                 <p>{{ $news_item->text }}</p>
             </div> 
@@ -116,8 +118,8 @@
             @endforeach
         </div>
         @endif
-    @include('components.footer')
     </div>
+    @include('components.footer')
     <script>
         function getId(news_id) {
             $.ajax({
@@ -130,7 +132,7 @@
                 .fail(function(jqXHR, ajaxOpions, throwError) {
                     console.log(data);
                 })
-        }        
+        }       
     </script>
 </body>
 </html>

@@ -24,8 +24,8 @@ class UpdateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'email' => 'required'
+            'name' => 'required | max:60 | min:3',
+            'email' => 'required | unique:users| email'
         ];
     }
 
@@ -33,7 +33,11 @@ class UpdateUserRequest extends FormRequest
     {
         return [
             'name.required' => 'Необходимо заполнить поле',
-            'email.required' => 'Укажите E-mail'
+            'name.max' => 'Слишком длинное ФИО',
+            'name.min' => 'Слишком короткое ФИО. Минимум 3 символа',
+            'email.required' => 'Укажите E-mail',
+            'email.unique' => 'Этот E-mail уже занят',
+            'email.email' => 'E-mail введён некорректно'
         ];
     }
 }
